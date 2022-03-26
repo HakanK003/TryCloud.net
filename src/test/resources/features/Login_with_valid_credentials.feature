@@ -9,6 +9,7 @@ Feature: As a user, I should be able to log in.
     Then verify the user is on the dashboard page
     Examples:
       | username |  | password    |
-      | user7    |  | Userpass123 |
-      | user34   |  | Userpass123 |
-      | user99   |  | Userpass123 |
+      | user27    |  | Userpass123 |
+      | user57   |  | Userpass123 |
+      | user87  |  | Userpass123 |
+      | user117  |  | Userpass123 |
