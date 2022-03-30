@@ -5,17 +5,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.ArrayList;
+import java.util.List;
 
-public class BasePage {
+public class HomePage extends BasePage {
 
-    public BasePage() {
+    public HomePage(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(css = "div[class='icon-contacts menutoggle']")
-    public WebElement contactButton;
 
+    @FindBy(css = "div[class='full-name']")
+    public List<WebElement> contactList;
 
 
 }
