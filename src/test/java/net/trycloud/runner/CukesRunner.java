@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "net/trycloud/step_definitions",
         dryRun = false,
-        tags = "",
+        tags = "@wipAP",
         publish = true
 )
 
