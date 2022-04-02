@@ -21,4 +21,5 @@ public class LoginPage extends BasePage {
         this.LogInBTN.click();
     }
 
+
 }

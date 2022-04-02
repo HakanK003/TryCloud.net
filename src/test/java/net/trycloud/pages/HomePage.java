@@ -17,5 +17,8 @@ public class HomePage extends BasePage {
     @FindBy(css = "div[class='full-name']")
     public List<WebElement> contactList;
 
+    @FindBy(xpath ="//li[@id='contacts']")
+    public WebElement contactsModule;
+
 
 }
