@@ -20,11 +20,11 @@ public class ContactsModuleAccessStepDefinitions {
      @Given("user on the dashboard page")
     public void user_on_the_dashboard_page() {
 
-        Driver.getDriver().get(ConfigurationReader.getProperty("environment"));
+        Driver.getDriver().get(ConfigurationReader.getProperty("mainPageURL"));
 
-        loginPage.usernameInput.sendKeys(ConfigurationReader.getProperty("user"));
-        loginPage.passwordInput.sendKeys( ConfigurationReader.getProperty("password") );
-        loginPage.LogInBTN.click();
+       // loginPage.usernameInput.sendKeys(ConfigurationReader.getProperty("username"));
+       // loginPage.passwordInput.sendKeys( ConfigurationReader.getProperty("password") );
+      //  loginPage.LogInBTN.click();
     }
 
 
