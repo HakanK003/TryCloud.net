@@ -12,37 +12,49 @@ import org.junit.Assert;
 
 public class ContactsModuleAccessStepDefinitions {
 
-     LoginPage loginPage = new LoginPage();
-     HomePage homePage = new HomePage();
+    LoginPage loginPage = new LoginPage();
+    HomePage homePage = new HomePage();
 
-
-
-     @Given("user on the dashboard page")
+    @Given("user on the dashboard page")
     public void user_on_the_dashboard_page() {
 
-        Driver.getDriver().get(ConfigurationReader.getProperty("mainPageURL"));
+        Driver.getDriver().get( ConfigurationReader.getProperty("environment") );
+        loginPage.logInWithSuccess();
 
-       // loginPage.usernameInput.sendKeys(ConfigurationReader.getProperty("username"));
-       // loginPage.passwordInput.sendKeys( ConfigurationReader.getProperty("password") );
-      //  loginPage.LogInBTN.click();
+     /*   loginPage.usernameInput.sendKeys("User27");
+        loginPage.passwordInput.sendKeys("Userpass123");
+        loginPage.LogInBTN.click(); */
+        BrowserUtils.sleep(3);
+
     }
-
-
-    @When("the user clicks the {string} module")
-    public void the_user_clicks_the_module(String string) {
+    @When("user clicks the Contacts module")
+    public void user_clicks_the_contacts_module() {
 
         homePage.contactsModule.click();
 
     }
     @Then("verify the page title is {string}")
     public void verify_the_page_title_is(String string) {
-
         BrowserUtils.sleep(3);
-        String actualTitle = Driver.getDriver().getTitle();
-        Assert.assertTrue(actualTitle.contains("contacts trycloud qa"));
 
+        // String expectedInTitle = "Files - Trycloud QA";
 
+       // String actualTitle = Driver.getDriver().getTitle();
+        Assert.assertTrue(Driver.getDriver().getTitle().contains(string));
 
     }
 
+
+
+
+
+
+
+
+
+
 }
+
+
+
+

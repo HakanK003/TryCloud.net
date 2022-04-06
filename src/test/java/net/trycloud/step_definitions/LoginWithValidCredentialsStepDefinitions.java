@@ -12,7 +12,8 @@ public class LoginWithValidCredentialsStepDefinitions {
     LoginPage loginPage = new LoginPage();
 
     @Given("user is on the login page")
-    public void user_is_on_the_login_page() {
+    public void user_is_on_the_login_page()
+    {
         Driver.getDriver().get(ConfigurationReader.getProperty("env"));
     }
 
@@ -25,6 +26,7 @@ public class LoginWithValidCredentialsStepDefinitions {
 
     @When("user clicks the login button")
     public void user_clicks_the_login_button() {
+
         loginPage.LogInBTN.click();
     }
 
