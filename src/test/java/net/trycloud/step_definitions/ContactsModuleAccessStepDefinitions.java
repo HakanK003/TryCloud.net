@@ -15,18 +15,18 @@ public class ContactsModuleAccessStepDefinitions {
     LoginPage loginPage = new LoginPage();
     HomePage homePage = new HomePage();
 
-    @Given("user on the dashboard page")
-    public void user_on_the_dashboard_page() {
-
-        Driver.getDriver().get( ConfigurationReader.getProperty("environment") );
-        loginPage.logInWithSuccess();
-
-     /*   loginPage.usernameInput.sendKeys("User27");
-        loginPage.passwordInput.sendKeys("Userpass123");
-        loginPage.LogInBTN.click(); */
-        BrowserUtils.sleep(3);
-
-    }
+//    @Given("user on the dashboard page")
+//    public void user_on_the_dashboard_page() {
+//
+//
+//        loginPage.logInWithSuccess();
+//
+//     /*   loginPage.usernameInput.sendKeys("User27");
+//        loginPage.passwordInput.sendKeys("Userpass123");
+//        loginPage.LogInBTN.click(); */
+//        BrowserUtils.sleep(3);
+//
+//    }
     @When("user clicks the Contacts module")
     public void user_clicks_the_contacts_module() {
 

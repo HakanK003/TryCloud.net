@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         glue = "net/trycloud/step_definitions",
         dryRun = false,
         publish = true,
-        tags = "@wipAP"
+        tags = "@wip"
 
 
 )

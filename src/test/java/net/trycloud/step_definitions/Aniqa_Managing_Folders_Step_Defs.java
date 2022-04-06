@@ -21,12 +21,12 @@ public class Aniqa_Managing_Folders_Step_Defs {
     String textToVerify = faker.superhero().name();
 
 
-    @Given("user on the dashboard page")
-    public void user_on_the_dashboard_page() {
-
-        LoginPage lp = new LoginPage();
-        lp.logInWithSuccess();
-    }
+//    @Given("user on the dashboard page")
+//    public void user_on_the_dashboard_page() {
+//
+//        LoginPage lp = new LoginPage();
+//        lp.logInWithSuccess();
+//    }
 
     @When("the user clicks the -Files- module")
     public void the_user_clicks_the_module() {
