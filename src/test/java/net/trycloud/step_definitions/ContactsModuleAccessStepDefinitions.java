@@ -30,6 +30,8 @@ public class ContactsModuleAccessStepDefinitions {
     @When("user clicks the Contacts module")
     public void user_clicks_the_contacts_module() {
 
+
+        //
         homePage.contactsModule.click();
 
     }
