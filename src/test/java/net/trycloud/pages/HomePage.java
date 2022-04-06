@@ -55,6 +55,15 @@ public class HomePage extends BasePage {
 
 
 
+    @FindBy(xpath = "//label[@for='select_all_files']")
+    public WebElement selectAllFilesCheckBox;
+
+
+
+    @FindBy(xpath = "//tbody//input[@type='checkbox']")
+    public List<WebElement> listOfCheckBoxElements;
+
+
 
 
 
