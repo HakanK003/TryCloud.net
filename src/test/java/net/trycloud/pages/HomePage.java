@@ -19,6 +19,9 @@ public class HomePage extends BasePage {
     @FindBy(css = "div[class='full-name']")
     public List<WebElement> contactList;
 
+    @FindBy(xpath = "//li[@data-id='contacts']")
+    public WebElement contactsModule;
+
 
 @FindBy(xpath = "//ul[@id='appmenu']//li[@data-id='files']")
     public WebElement fileFolderIcon;
