@@ -1,10 +1,14 @@
 package net.trycloud.pages;
 
 import net.trycloud.utilities.ConfigurationReader;
+import net.trycloud.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends BasePage {
+
+
+
     @FindBy(id = "user")
     public WebElement usernameInput;
 
@@ -16,9 +20,11 @@ public class LoginPage extends BasePage {
 
 
     public void logInWithSuccess() {
+     Driver.getDriver().get(ConfigurationReader.getProperty("env"));
         this.usernameInput.sendKeys(ConfigurationReader.getProperty("username"));
         this.passwordInput.sendKeys(ConfigurationReader.getProperty("password"));
         this.LogInBTN.click();
     }
+
 
 }
